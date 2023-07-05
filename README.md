@@ -64,6 +64,7 @@ Other items needed include:
 
 ## The Circuit
 
+
 The circuit started as this:
 
 ![Mood breadboard](./img/mood-breadboard.png)
