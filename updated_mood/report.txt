@@ -1,0 +1,11 @@
+Plotted to 'D:\MOODLighting\mood_g_b\MOODLighting-F_Cu.gbr'.
+Plotted to 'D:\MOODLighting\mood_g_b\MOODLighting-B_Cu.gbr'.
+Plotted to 'D:\MOODLighting\mood_g_b\MOODLighting-F_Paste.gbr'.
+Plotted to 'D:\MOODLighting\mood_g_b\MOODLighting-B_Paste.gbr'.
+Plotted to 'D:\MOODLighting\mood_g_b\MOODLighting-F_Silkscreen.gbr'.
+Plotted to 'D:\MOODLighting\mood_g_b\MOODLighting-B_Silkscreen.gbr'.
+Plotted to 'D:\MOODLighting\mood_g_b\MOODLighting-F_Mask.gbr'.
+Plotted to 'D:\MOODLighting\mood_g_b\MOODLighting-B_Mask.gbr'.
+Plotted to 'D:\MOODLighting\mood_g_b\MOODLighting-Edge_Cuts.gbr'.
+Created Gerber job file 'D:\MOODLighting\mood_g_b\MOODLighting-job.gbrjob'.
+Info: Done.
