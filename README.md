@@ -67,11 +67,11 @@ Other items needed include:
 
 The circuit started as this:
 
-![Mood breadboard](./img/mood-breadboard.png)
+<img src="./img/mood-breadboard.jpg"  width="50%" height="50%">
 
 and ended up as this:
 
-![Mood whiteboard](./img/mood-whiteboard.png)
+![Mood whiteboard](./img/mood-schematic.png)
 
 ---
 
