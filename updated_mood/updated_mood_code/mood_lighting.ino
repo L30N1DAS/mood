@@ -249,14 +249,14 @@ void setup() {
 
 
   
-  m =b=g=r=count = 0;
-  q =p =0;
+  m = b = g = r = count = 0;
+  q = p = 0;
   pinMode(4, OUTPUT);
   pinMode(5, OUTPUT);
-    pinMode(9, OUTPUT);
-    pinMode(10, OUTPUT);
-    pinMode(6, OUTPUT);
-    IrReceiver.begin(IR_RECEIVE_PIN, ENABLE_LED_FEEDBACK);
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(6, OUTPUT);
+  IrReceiver.begin(IR_RECEIVE_PIN, ENABLE_LED_FEEDBACK);
 
 }
 
@@ -266,23 +266,66 @@ void loop() {
 
         switch(IrReceiver.decodedIRData.command){
           
-          case 0x16:digitalWrite(9,0);digitalWrite(10,0);count++;digitalWrite(6,0);break;
+          case 0x16:
+            digitalWrite(9, 0);
+            digitalWrite(10, 0);
+            count++;
+            digitalWrite(6, 0);
+            break;
 
-          case 0x45:digitalWrite(4, !digitalRead(4));delay(100);break;
-          case 0x7: analogWrite(5,(m -=64));break;
-          case 0x9: analogWrite(5,(m +=64-1));break;
+          case 0x45:
+            digitalWrite(4, !digitalRead(4));
+            delay(100);
+            break;
+          
+          case 0x7: 
+            analogWrite(5, (m-=64));
+            break;
+          
+          case 0x9: 
+            analogWrite(5, (m+=64-1));
+            break;
 
-          case 0x5e: digitalWrite(9, !digitalRead(9));delay(100); break;
-          case 0x4a: analogWrite(9,(b -= 16));break; 
-          case 0x5a: analogWrite(9,(b+=16)-1);p = !p; break;
+          case 0x5e: 
+            digitalWrite(9, !digitalRead(9));
+            delay(100); 
+            break;
+          
+          case 0x4a: 
+            analogWrite(9, (b-=16));
+            break; 
+          
+          case 0x5a: 
+            analogWrite(9, (b+=16)-1);
+            p = !p; 
+            break;
            
-          case 0x18: digitalWrite(10, !digitalRead(10));q = !q; delay(100); break; 
-          case 0x52: analogWrite(10,(g -= 16));break; 
-          case 0x1c: analogWrite(10,(g+=16)-1);break;
+          case 0x18: digitalWrite(10, !digitalRead(10));
+            q = !q; 
+            delay(100); 
+            break; 
+          
+          case 0x52: 
+            analogWrite(10, (g-=16));
+            break; 
+          
+          case 0x1c: 
+            analogWrite(10, (g+=16)-1);
+            break;
 
-          case 0xc: digitalWrite(6, !digitalRead(6));delay(100);break;
-          case 0x42: analogWrite(6,(r -= 16));count--;break; 
-          case 0x8: analogWrite(6,(r+=16));break;
+          case 0xc: 
+            digitalWrite(6, !digitalRead(6));
+            delay(100);
+            break;
+          
+          case 0x42: 
+            analogWrite(6, (r-=16));
+            count--;
+            break; 
+          
+          case 0x8: 
+            analogWrite(6, (r+=16));
+            break;
           
 
         }
@@ -293,7 +336,7 @@ void loop() {
          */
          delay(100);
          if(count == 4 && q == 1 && p == 0)
-         doom();
+           doom();
         IrReceiver.resume(); // Enable receiving of the next value
 
         
@@ -302,13 +345,17 @@ void loop() {
 
 void doom(){ // iterate over the notes of the melody.
   // Remember, the array is twice the number of notes (notes + durations)
-  digitalWrite(9,0);digitalWrite(10,0);count++;digitalWrite(6,0);
-  digitalWrite(4,1);
+  digitalWrite(9, 0);
+  digitalWrite(10, 0);
+  count++;
+  digitalWrite(6, 0);
+  digitalWrite(4, 1);
   digitalWrite(5, 1);
+  
   for (int thisNote = 0; thisNote < notes * 2; thisNote = thisNote + 2) {
 
     // calculates the duration of each note
-    divider = pgm_read_word_near(melody+thisNote + 1);
+    divider = pgm_read_word_near(melody + thisNote + 1);
     if (divider > 0) {
       // regular note, just proceed
       noteDuration = (wholenote) / divider;
@@ -319,7 +366,7 @@ void doom(){ // iterate over the notes of the melody.
     }
 
     // we only play the note for 90% of the duration, leaving 10% as a pause
-    tone(buzzer, pgm_read_word_near(melody+thisNote), noteDuration * 0.9);
+    tone(buzzer, pgm_read_word_near(melody + thisNote), noteDuration * 0.9);
 
     // Wait for the specief duration before playing the next note.
     
