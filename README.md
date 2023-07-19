@@ -5,7 +5,7 @@
 * [Rationale](README.md#rationale)
 * [Safety](README.md#safety)
 * [Bill of materials (BOM)](README.md#bill-of-materials)
-* [The circuit](README.md#the-circuit)
+* [The Circuit](README.md#the-circuit)
 * [KiCAD](README.md#kicad)
 * [Design](README.md#design)
 * [Arduino Software](README.md#arduino-software)
@@ -27,7 +27,7 @@ This project was selected to introduce a variety of topics including:
 
 By the end of these two weeks you will have a basic understanding of how to 
 layout and build a basic circuit and what vulnerabilities it may have 
-unintentional or otherwise).
+(unintentional or otherwise).
 
 ---
 
@@ -42,7 +42,7 @@ NOT turn on any of the machines or use any of the equipment until you have had t
 safety overview for that equipment or process.** 
 
 Similarly, if you are unsure on the safe way to perform some process just ask one of 
-our several lab assitants.  We are happy to help!  There will be additional safety
+our several lab assistants.  We are happy to help!  There will be additional safety
 instructions covered over the course of the two weeks and all relevant safety documents
 will be kept in the `Safety` folder in this repository.
 
@@ -53,7 +53,7 @@ will be kept in the `Safety` folder in this repository.
 Most of the materials have already been inlcuded in your Elegoo kit.  These include:
 
 * Arduino project board
-* Various items from the elegoo kit
+* Various items from the Elegoo kit:
   * 2x Tri-color LED
   * 3x 330Ω Resistors
   * Buzzer
@@ -77,9 +77,15 @@ The circuit started as this:
 
 <img src="./img/mood-breadboard.jpg"  width="50%" height="50%">
 
-and ended up as this:
+This is the schematic:
 
-![Mood whiteboard](./img/mood-schematic.png)
+![Mood Schematic](./img/mood-schematic.png)
+
+This is the PCB layout:
+
+![Mood PCB](./img/mood-pcb.png)
+
+This is the final product:
 
 ---
 
