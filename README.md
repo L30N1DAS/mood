@@ -54,11 +54,19 @@ Most of the materials have already been inlcuded in your Elegoo kit.  These incl
 
 * Arduino project board
 * Various items from the elegoo kit
+  * 2x Tri-color LED
+  * 3x 330Ω Resistors
+  * Buzzer
+  * L293D
+  * DC Motor
+  * IR Receiver and Remote Control
+  * 2μF Capacitor
 
 Other items needed include:
 
 * Copper clad PCB board
-* various electronic components
+* Solder
+* PCB Fabrication Equipment
 
 ---
 
