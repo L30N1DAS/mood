@@ -91,7 +91,7 @@ We will be using the open source Computer-Aided Drawing / Electronics Design Aut
 
 ## Design
 
-To be designed...
+The project aims to design a remote-controlled color-changing light system with RGB LEDs controlled by three PWM signals. The system will be operated using an IR remote controller, allowing users to adjust LED colors and brightness levels to create various vibrant RGB combinations. Notably, as a part of the project's educational goals, an intentional inclusion of "malicious" code will be introduced. This demonstration will emphasize the importance of secure coding practices, as the code will play the E1M1 DOOM song when a specific button sequence is entered. The project's primary focus is on exploring LED control technology, color customization, and the implications of unsecured coding practices. Safety measures will not be implemented, as the project's central objective is to highlight the potential risks associated with inadequate security measures. The project seeks to provide users with an informative and insightful experience while demonstrating the significance of security in electronic systems.
 
 ---
 
